@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10pt"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/texto"
+        android:layout_width="369dp"
+        android:layout_height="130dp"
+        android:autofillHints="username"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="LabelFor"
+        tools:text="0.0" />
+
+    <TableLayout
+        android:layout_width="367dp"
+        android:layout_height="345dp"
+        android:layout_marginBottom="2pt">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:layout_marginBottom="2pt">
+
+            <Button
+                android:id="@+id/Borrartodo"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:backgroundTint="#6FE1EF"
+                android:onClick="btlimpiar"
+                android:text="Ac"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Divicion"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#6FE1EF"
+                android:onClick="btoperacion"
+                android:text="/"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Multiplicar"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:backgroundTint="#6FE1EF"
+                android:onClick="btoperacion"
+                android:text="X"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Borrar"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:backgroundTint="#6FE1EF"
+                android:onClick="btlimpiar"
+                android:text="C"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:layout_marginBottom="2pt">
+
+            <Button
+                android:id="@+id/Nueve"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="81dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="btnevent"
+                android:text="9"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Ocho"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="83dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="btnevent"
+                android:text="8"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Siete"
+                style="@android:style/Widget.Button"
+                android:layout_width="74dp"
+                android:layout_height="83dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="btnevent"
+                android:text="7"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Suma"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#6FE1EF"
+                android:onClick="btoperacion"
+                android:text="+"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="381dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2pt">
+
+            <Button
+                android:id="@+id/Seis"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="78dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="btnevent"
+                android:text="6"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Cinco"
+                style="@android:style/Widget.Button"
+                android:layout_width="73dp"
+                android:layout_height="78dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="btnevent"
+                android:text="5"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Cuatro"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="78dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="btnevent"
+                android:text="4"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Resta"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="78dp"
+                android:backgroundTint="#6FE1EF"
+                android:onClick="btoperacion"
+                android:text="-"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2pt">
+
+            <Button
+                android:id="@+id/Tres"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="btnevent"
+                android:text="3"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Dos"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="btnevent"
+                android:text="2"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Uno"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="btnevent"
+                android:text="1"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/Porcentaje"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="105dp"
+                android:layout_height="81dp"
+                android:backgroundTint="#6FE1EF"
+                android:onClick="btoperacion"
+                tools:ignore="ButtonStyle,HardcodedText"
+                tools:text="%" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+
+        android:layout_width="352dp"
+        android:layout_height="74dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cero"
+            style="@android:style/Widget.Button"
+            android:layout_width="126dp"
+            android:layout_height="74dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="btnevent"
+            android:text="0"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/Punto"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="62dp"
+            android:layout_height="83dp"
+            android:layout_weight="1"
+            android:backgroundTint="#6FE1EF"
+            android:onClick="btnevent"
+            android:text="."
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/Igual"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#6FE1EF"
+            android:onClick="btCalcular"
+            android:text="="
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+    </LinearLayout>
+</LinearLayout>
